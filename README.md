@@ -1,0 +1,1 @@
+ autotrain llm --train --project-name $project_name --model mistralai/Mistral-7B-Instruct-v0.2 --data-path $data_path --text_column $text_column --use-peft --quantization int4 --lr 2e-4 --train-batch-size 2 --epochs 1 --trainer sft --block_size 1024 --lora_r 16 --lora_alpha 32 --merge-adapter --lora_dropout 0.045 --push-to-hub --token $token --username shivam-dubey-1
